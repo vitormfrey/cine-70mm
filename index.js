@@ -30,6 +30,13 @@ app.listen(3000, () =>{
 })
 
 app.get('/', (req, res) =>{
-  res.render("index")
+  const sql = `SELECT * FROM Film ORDER BY Name`
+  db.all(sql, [], (err, films) =>{
+    if(err){
+      return console.erro(err.message)
+    }
+  res.render("index", {model: films})
+
+  })
 })
 

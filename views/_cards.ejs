@@ -1,26 +1,14 @@
+
+
 <section class="container">
-  <div class="card">
-    <img class="card-img-top" src="https://i.pinimg.com/originals/7d/1b/c6/7d1bc65e4aae10f30750229b7f01be4a.jpg" alt="Imagem do card">
-    <div class="card-body">
-      <h5 class="card-title">Nome do Filme</h5>
-      <p class="card-text">Descrição...</p>
-    </div>
-  </div>
+  <% for (const films of model){ %>
 
   <div class="card">
-    <img class="card-img-top" src="https://lumiere-a.akamaihd.net/v1/images/690x0w_br_9e5801a5.jpeg?region=0%2C0%2C690%2C1035" alt="Imagem do card">
+    <img class="card-img-top" src= <%= films.Image%> alt="Imagem do card">
     <div class="card-body">
-      <h5 class="card-title">Nome do Filme</h5>
-      <p class="card-text">Descrição...</p>
+      <h5 class="card-title"><%= films.Name%> </h5>
+      <p class="card-text"><%= films.Review%></p>
     </div>
   </div>
+  <%  } %>
 
-  <div class="card">
-    <img class="card-img-top" src="https://br.web.img3.acsta.net/pictures/15/01/14/19/33/564956.jpg" alt="Imagem do card">
-    <div class="card-body">
-      <h5 class="card-title">Nome do Filme</h5>
-      <p class="card-text">Descrição...</p>
-    </div>
-  </div>
-
-</section>
