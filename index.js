@@ -40,3 +40,10 @@ app.get('/', (req, res) =>{
   })
 })
 
+app.get('/cadastro', (req, res) =>{
+  // if(err){
+  //   return console.error(err.message)
+  // }
+  res.render("cadastro")
+})
+
